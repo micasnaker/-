@@ -1,0 +1,66 @@
+<!-- 
+<i-notice-bar>
+规则:一共10题，答对6题即可参与抽奖 
+</i-notice-bar> -->
+<view class='countDown'>倒计时：<text style='color:red'>{{countDownNum}}</text>s</view>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+      <text class='fenshu'>得分：{{defen}} ---  第 {{index+1}} 题</text>
+      
+    </block>
+  </view>
+      <view class="weui-btn-area" style="width:30%;">
+      <i-button type="error" bindtap="handleClick" wx:if="{{index+1>9}}">查看结果</i-button>
+      <!-- <i-button open-type="getPhoneNumber" class="weui-btn" type="ghost" bind:getphonenumber="getPhoneNumber" wx:else>获取授权</i-button> -->
+
+    </view>
+</view>
+
+
+<image src='{{postList[index].image_url}}'></image>
+
+<scroll-view>
+  <button id='A' bindtap="btnOpClick" style="background-color: {{bcA}};">{{postList[index].content[0]}}</button>
+  <button id='B' bindtap="btnOpClick" style="background-color: {{bcB}};">{{postList[index].content[1]}}</button>
+  <button id='C' bindtap="btnOpClick" style="background-color: {{bcC}};">{{postList[index].content[2]}}</button>
+</scroll-view>
+
+<!-- 题目下的上一题下一题抽奖查看结果按钮 -->
+<!-- <view class='select'> -->
+<!-- <i-button bindtap="lastQuestion" type='warning'>上一题</i-button> -->
+
+
+<!-- <i-button type="error" bindtap="handleClick" wx:if="{{index+1>9}}">查看结果</i-button> -->
+<!-- <i-button bindtap="nextQuestion" type='success' wx:else>下一题</i-button> -->
+<!-- </view> -->
+<!-- <i-button bindtap="handleClick" type='primary' wx:if="{{defen>5}}">抽奖</i-button> -->
+
+
+
+  <!-- <i-radio id='A' position="{{position}}" bindchange="btnOpClick" value="{{postList[index].content[0]}}" style="background-color: {{bcA}};"></i-radio>
+  <i-radio id='B' position="{{position}}" bindchange="btnOpClick" value="{{postList[index].content[1]}}" style="background-color: {{bcB}};"></i-radio>
+  <i-radio id='C' position="{{position}}" bindchange="btnOpClick" value="{{postList[index].content[2]}}" style="background-color: {{bcC}};"></i-radio> -->
+
+<!-- <i-panel>
+  <i-radio-group current="{{currents}}" bindchange="handleFruitChange"> -->
+    <!-- <i-radio wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{postList[index].content[0]}}">
+    </i-radio>
+
+  <!-- </i-radio-group>
+</i-panel> --> 
+
+<!-- <i-page current="{{ current }}" total="10" bind:change="handleChange">
+    <view slot="prev">
+        <i-icon type="return"></i-icon>
+        上一题
+    </view>
+    <view slot="next">
+        下一题
+        <i-icon type="enter"></i-icon>
+    </view>
+</i-page> -->
+

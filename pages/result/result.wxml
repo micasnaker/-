@@ -1,0 +1,15 @@
+
+<i-notice-bar icon="systemprompt">
+    恭喜您，题目已答完！
+</i-notice-bar>
+<i-notice-bar>
+    当前答对题数：{{Defen}} 题   <text wx:if="{{Defen>5}}">且可以参与抽奖</text>
+    
+</i-notice-bar>
+
+<i-button bind:click="handleClick" type="primary" wx:if="{{Defen>5}}">抽奖</i-button>
+
+<i-alert type="error" show-icon desc wx:else>
+    不好意思！
+    <view slot="desc">您未能正确6题或6题以上，因此无法参与抽奖.</view>
+</i-alert>

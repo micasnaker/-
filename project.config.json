@@ -1,0 +1,87 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wx8478f76041e272cc",
+	"projectname": "11",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "problems",
+					"pathName": "pages/problems/problems",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "answer",
+					"pathName": "pages/answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/result/result",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "phone",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "games",
+					"pathName": "pages/games/games",
+					"query": ""
+				}
+			]
+		}
+	}
+}

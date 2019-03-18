@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/game/game",
+    "pages/games/games",
+    "pages/problems/problems",
+    "pages/result/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-card": "../../dist/card/index",
+    "i-radio-group": "../../dist/radio-group/index",
+    "i-radio": "../../dist/radio/index",
+    "i-page": "../../dist/page/index",
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "i-alert": "../../dist/alert/index",
+    "i-input": "../../dist/input/index",
+    "i-toast": "../../dist/toast/index"
+  }
+}

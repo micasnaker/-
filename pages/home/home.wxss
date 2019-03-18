@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+.chou{
+  color: blue
+}
+
+.weui-btn-area{
+  text-align: center;
+  margin: 0 auto;
+}

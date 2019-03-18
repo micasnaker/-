@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+<i-card bindtap="gameStart" title="剪影竞猜" extra="活动" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">根据剪影选出明星,从20题随机10题</view>
+    <view slot="footer">答对6题以上可参与抽奖</view>
+</i-card>
+<!-- <i-button type='primary' bind:click="handleClick">开始抽奖</i-button> -->
+
+    <view class="weui-btn-area" style="width:100%;">
+      <!-- <i-button type="error" bindtap="handleClick" wx:if="{{index+1>9}}">查看结果</i-button> -->
+      <i-button open-type="getPhoneNumber" class="weui-btn" type="ghost" bind:getphonenumber="getPhoneNumber" >开始游戏</i-button>
+
+    </view>
+
+    <!-- <button open-type="share" type="primary">分享</button> -->
